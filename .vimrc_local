@@ -1,0 +1,56 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ColorScheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set t_8b=[48;2;%lu;%lu;%lum
+set t_8f=[38;2;%lu;%lu;%lum
+if (has("termguicolors"))
+  set termguicolors
+endif
+set background=dark
+try
+  colorscheme one
+catch
+endtry
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ALE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" ale reset
+unlet g:ale_enabled
+unlet g:ale_lint_on_text_changed
+unlet g:ale_lint_on_insert_leave
+unlet g:ale_linters
+"
+" Turn off ALE linters for typescript
+let g:ale_linters = {'typescript': []}
+
+" ale specific settings
+nmap <leader>a :ALENextWrap <cr>
+nmap <leader>e :ALEDetail <cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Elm
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:elm_format_autosave = 1
+let g:elm_setup_keybindings = 0
+let g:elm_jump_to_error = 1
+let g:elm_detailed_complete = 1
+let g:elm_make_show_warnings = 1
+
+au FileType elm nmap <leader>f :ElmFormat<cr>
+" au FileType elm nmap <leader>e <Plug>(elm-error-detail)
+au FileType elm nmap <leader>d <Plug>(elm-show-docs)
+" au FileType elm nmap <leader>m <Plug>(elm-make-main)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Clojure
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au FileType clojure RainbowParenthesesActivate
+au FileType clojure RainbowParenthesesLoadRound
+au FileType clojure RainbowParenthesesLoadSquare
+au FileType clojure RainbowParenthesesLoadBraces
+
+" Clojure mapping
+nmap <leader>ca :%Eval <cr>

@@ -1,0 +1,11 @@
+[color]
+	ui = true
+[user]
+	name = Maor Leger
+	email = maor.leger@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+[core]
+	editor = /usr/local/bin/vim
+	excludesfile = /Users/mleger/.global_ignore
