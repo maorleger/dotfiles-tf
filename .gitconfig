@@ -8,4 +8,4 @@
 	ci = commit
 [core]
 	editor = /usr/local/bin/vim
-	excludesfile = /Users/mleger/.global_ignore
+	excludesfile = ~/.global_ignore
