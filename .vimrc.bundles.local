@@ -1,7 +1,7 @@
 Plug 'itchyny/lightline.vim'
-Plug 'elixir-lang/vim-elixir'
-Plug 'slashmili/alchemist.vim'
 Plug 'craigemery/vim-autotag'
+Plug 'tpope/vim-repeat'
+
 Plug 'rakr/vim-one'
 
 " Elm
@@ -11,9 +11,11 @@ Plug 'ElmCast/elm-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'burnettk/vim-angular'
 
-" More clojure
-Plug 'tpope/vim-repeat'
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+
+" Clojure
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'bhurlow/vim-parinfer'
 Plug 'venantius/vim-cljfmt'
