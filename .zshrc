@@ -29,3 +29,4 @@ alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias stoppg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
 alias startmysql="brew services start mysql"
 alias stopmysql="brew services stop mysql"
+alias tf="terraform"
