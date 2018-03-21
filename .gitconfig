@@ -7,7 +7,7 @@
 	co = checkout
 	ci = commit
 [core]
-	editor = /usr/local/bin/vim
+	editor = vim
 	excludesfile = ~/.global_ignore
 [credential]
   helper = cache --timeout=3600
