@@ -1,6 +1,5 @@
 Plug 'itchyny/lightline.vim'
 Plug 'craigemery/vim-autotag'
-Plug 'tpope/vim-repeat'
 
 Plug 'rakr/vim-one'
 
