@@ -1,7 +1,18 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'itchyny/lightline.vim'
 Plug 'craigemery/vim-autotag'
 
+" Colorscheme
 Plug 'rakr/vim-one'
+
+" Dash integration
+Plug 'rizzatti/dash.vim'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Language plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Elm
 Plug 'ElmCast/elm-vim'
@@ -18,6 +29,3 @@ Plug 'slashmili/alchemist.vim'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'venantius/vim-cljfmt'
-
-" Dash integration
-Plug 'rizzatti/dash.vim'
