@@ -1,0 +1,6 @@
+function docker-killall() {
+  docker stop $(docker ps -a -q) 2> /dev/null
+}
+
+alias gap="git add -p"
+alias gpp="git pull --rebase && git push"

@@ -30,3 +30,9 @@ alias stoppg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serve
 alias startmysql="brew services start mysql"
 alias stopmysql="brew services stop mysql"
 alias tf="terraform"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mleger/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mleger/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mleger/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mleger/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
