@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(bundler git jsontools rails tmux yarn)
+plugins=(bundler docker git jsontools rails tmux yarn)
 
 source $ZSH/oh-my-zsh.sh
 
