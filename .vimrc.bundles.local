@@ -29,3 +29,6 @@ Plug 'slashmili/alchemist.vim'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'venantius/vim-cljfmt'
+
+" VueJS
+Plug 'posva/vim-vue'
