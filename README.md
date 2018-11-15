@@ -9,6 +9,7 @@ I lean heavily on [Braintree's vim config](https://github.com/braintreeps/vim_do
 1. [tmux](https://github.com/tmux/tmux)
 1. [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) for git diffs
 1. [rcm](https://github.com/thoughtbot/rcm#installation)
+1. [Braintree's vim dotfiles](https://github.com/braintreeps/vim_dotfiles)
 
 ## Installation
 
