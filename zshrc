@@ -14,29 +14,3 @@ ZSH_THEME="robbyrussell"
 plugins=(bundler docker git jsontools rails tmux yarn)
 
 source $ZSH/oh-my-zsh.sh
-
-export EDITOR='vim'
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# aliases
-alias be="bundle exec"
-alias gap="git add -p"
-alias gst="git status"
-alias gpp="git pull --rebase && git push"
-alias cleanbranch="git branch --merge | grep -v master | xargs git branch -D"
-alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias stoppg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
-alias startmysql="brew services start mysql"
-alias stopmysql="brew services stop mysql"
-alias tf="terraform"
-
-# Include Google Cloud SDK
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mleger/workspace/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mleger/workspace/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mleger/workspace/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mleger/workspace/google-cloud-sdk/completion.zsh.inc'; fi
-
-export PATH='/Users/mleger/workspace/google-cloud-sdk':$PATH
