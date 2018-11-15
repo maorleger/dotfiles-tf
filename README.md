@@ -4,6 +4,9 @@ I lean heavily on [Braintree's vim config](https://github.com/braintreeps/vim_do
 
 ## Pre-requisites
 
+1. [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+1. [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+1. [tmux](https://github.com/tmux/tmux)
 1. [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) for git diffs
 1. [rcm](https://github.com/thoughtbot/rcm#installation)
 
