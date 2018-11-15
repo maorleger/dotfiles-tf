@@ -31,8 +31,12 @@ alias startmysql="brew services start mysql"
 alias stopmysql="brew services stop mysql"
 alias tf="terraform"
 
+# Include Google Cloud SDK
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mleger/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mleger/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/mleger/workspace/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mleger/workspace/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/mleger/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mleger/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/mleger/workspace/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mleger/workspace/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH='/Users/mleger/workspace/google-cloud-sdk':$PATH
