@@ -2,7 +2,7 @@ Mostly used when terraforming an EC2 instance for development.
 
 I lean heavily on [Braintree's vim config](https://github.com/braintreeps/vim_dotfiles) so this contains only my local overrides
 
-## Pre-requisites
+## Prerequisites
 
 1. [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 1. [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
