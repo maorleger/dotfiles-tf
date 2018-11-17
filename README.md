@@ -14,9 +14,8 @@ I lean heavily on [Braintree's vim config](https://github.com/braintreeps/vim_do
 ## Installation
 
 ```
-git clone https://github.com/maorleger/dotfiles ~/.dotfiles
-cp ~/.dotfiles/rcrc ~/.rcrc # rcm configuration file needs to be copied first and cannot be symlinked
-rcup
+git clone https://github.com/maorleger/dotfiles $HOME/.dotfiles
+env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
 
 ## Post installation
