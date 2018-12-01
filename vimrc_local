@@ -9,7 +9,7 @@ endif
 set background=dark
 try
   colorscheme one
-  highlight Pmenu ctermbg=gray guibg=gray
+  " highlight Pmenu ctermbg=gray guibg=gray
 catch
 endtry
 
