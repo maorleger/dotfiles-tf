@@ -1,0 +1,23 @@
+# git
+alias gap="git add -p"
+alias gpp="git pull --rebase && git push"
+alias gst="git status"
+alias cleanbranch="git branch --merge | grep -v master | xargs git branch -D"
+
+# DBs
+alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias stoppg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop"
+alias startmysql="brew services start mysql"
+alias stopmysql="brew services stop mysql"
+
+# docker
+alias dcr="docker-compose run"
+alias dcb="docker-compose build"
+alias dcu="docker-compose up"
+alias dc="docker-compose"
+
+# terraform
+alias tf="terraform"
+
+# ruby
+alias be="bundle exec"
