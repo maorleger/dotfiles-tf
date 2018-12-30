@@ -1,3 +1,6 @@
+# system
+alias brewlove="brew update && brew upgrade && brew cleanup; brew doctor"
+
 # git
 alias gap="git add -p"
 alias gpp="git pull --rebase && git push"
