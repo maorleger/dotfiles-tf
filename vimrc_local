@@ -43,14 +43,13 @@ nmap <silent> <leader>da <Plug>DashSearch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:ale_enabled = 1
-" unlet g:ale_lint_on_text_changed
-" unlet g:ale_lint_on_insert_leave
-" unlet g:ale_linters
-"
-" Turn off ALE linters for typescript
-let g:ale_linters = {'typescript': []}
 
-" ale specific settings
+let g:ale_fixers = {
+      \ 'elixir': ['mix_format'],
+      \}
+let g:ale_fix_on_save = 1
+
+" ale specific mappings
 nmap <leader>a :ALENextWrap <cr>
 nmap <leader>e :ALEDetail <cr>
 

@@ -25,6 +25,7 @@ Plug 'burnettk/vim-angular'
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+Plug 'mhinz/vim-mix-format'
 
 " Clojure
 Plug 'guns/vim-sexp'
