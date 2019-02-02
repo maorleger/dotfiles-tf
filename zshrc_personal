@@ -1,3 +1,4 @@
 function docker-killall() {
-  docker stop $(docker ps -a -q) 2> /dev/null
+  docker container stop $(docker container ls -aq) 2> /dev/null
+  docker system prune -af
 }

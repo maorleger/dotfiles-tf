@@ -34,6 +34,8 @@ if [ -f ~/.google-sdk.zsh ]; then source ~/.google-sdk.zsh; fi
 
 if [ -f ~/.aliases ]; then source ~/.aliases; fi
 
+if [ -f ~/.zshrc_personal ]; then source ~/.zshrc_personal; fi # shared work  and personal
+
 # go setup
 mkdir -p $HOME/workspace/go
 mkdir -p $HOME/workspace/go/src/github.com/maorleger
