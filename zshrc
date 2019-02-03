@@ -34,10 +34,14 @@ if [ -f ~/.google-sdk.zsh ]; then source ~/.google-sdk.zsh; fi
 
 if [ -f ~/.aliases ]; then source ~/.aliases; fi
 
-if [ -f ~/.zshrc_personal ]; then source ~/.zshrc_personal; fi # shared work  and personal
+if [ -f ~/.zshrc_personal ]; then source ~/.zshrc_personal; fi
 
 # go setup
 mkdir -p $HOME/workspace/go
 mkdir -p $HOME/workspace/go/src/github.com/maorleger
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
+
+# Forward ssh to tmux
+eval `ssh-agent`
+ssh-add -K
