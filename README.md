@@ -14,8 +14,10 @@ I lean heavily on [Braintree's vim config](https://github.com/braintreeps/vim_do
 ## Installation
 
 ```
+# After all of the above have been installed
 git clone https://github.com/maorleger/dotfiles $HOME/.dotfiles
 env RCRC=$HOME/.dotfiles/rcrc rcup
+~/.vim/activate.sh
 ```
 
 ## Post installation
