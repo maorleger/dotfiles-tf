@@ -42,6 +42,9 @@ mkdir -p $HOME/workspace/go/src/github.com/maorleger
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
 
+# Java home
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # Forward ssh to tmux
 eval `ssh-agent`
 ssh-add -K
