@@ -8,29 +8,8 @@ Plug 'craigemery/vim-autotag'
 Plug 'rakr/vim-one'
 Plug 'chriskempson/base16-vim'
 
-" Dash integration
-Plug 'rizzatti/dash.vim'
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Elm
-Plug 'ElmCast/elm-vim'
-
-" Angular
-Plug 'leafgarland/typescript-vim'
-Plug 'burnettk/vim-angular'
-
-" Elixir
-Plug 'elixir-lang/vim-elixir'
-Plug 'slashmili/alchemist.vim'
-Plug 'mhinz/vim-mix-format'
-
-" Clojure
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'venantius/vim-cljfmt'
-
-" VueJS
-Plug 'posva/vim-vue'
+" PowerShell
+Plug 'PProvost/vim-ps1'
