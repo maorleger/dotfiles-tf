@@ -37,14 +37,14 @@ if [ -f ~/.aliases ]; then source ~/.aliases; fi
 if [ -f ~/.zshrc_personal ]; then source ~/.zshrc_personal; fi
 
 # go setup
-mkdir -p $HOME/workspace/go
-mkdir -p $HOME/workspace/go/src/github.com/maorleger
-export GOPATH=$HOME/workspace/go
-export PATH=$PATH:$GOPATH/bin
+# mkdir -p $HOME/workspace/go
+# mkdir -p $HOME/workspace/go/src/github.com/maorleger
+# export GOPATH=$HOME/workspace/go
+# export PATH=$PATH:$GOPATH/bin
 
 # Java home
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Forward ssh to tmux
-eval `ssh-agent`
-ssh-add -K
+# eval `ssh-agent`
+# ssh-add -K
