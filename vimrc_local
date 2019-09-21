@@ -90,3 +90,4 @@ let g:OmniSharp_translate_cygwin_wsl = 1
 let g:OmniSharp_selector_ui = 'fzf'    " Use fzf.vim
 let g:OmniSharp_highlight_types = 2
 let g:coc_global_extensions= [ 'coc-omnisharp' ]
+let g:OmniSharp_server_stdio = 1
