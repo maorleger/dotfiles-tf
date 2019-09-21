@@ -13,3 +13,5 @@ Plug 'chriskempson/base16-vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PowerShell
 Plug 'PProvost/vim-ps1'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}

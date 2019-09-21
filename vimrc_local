@@ -44,6 +44,10 @@ nmap <silent> <leader>da <Plug>DashSearch
 
 let g:ale_enabled = 1
 
+let g:ale_linters = { 
+      \ 'cs': ['OmniSharp'], 
+      \}
+
 let g:ale_fixers = {
       \ 'elixir': ['mix_format'],
       \}
@@ -78,3 +82,11 @@ au FileType clojure RainbowParenthesesLoadBraces
 
 " Clojure mapping
 nmap <leader>ca :%Eval <cr>
+
+" OmniSharp
+"
+let g:OmniSharp_server_path = '/mnt/c/workspace/omnisharp/OmniSharp.exe' 
+let g:OmniSharp_translate_cygwin_wsl = 1
+let g:OmniSharp_selector_ui = 'fzf'    " Use fzf.vim
+let g:OmniSharp_highlight_types = 2
+let g:coc_global_extensions= [ 'coc-omnisharp' ]
