@@ -6,6 +6,7 @@ alias gap="git add -p"
 alias gpp="git pull --rebase && git push"
 alias gst="git status"
 alias cleanbranch="git branch --merge | grep -v master | xargs git branch -D"
+alias gd="git status -vv | diff-so-fancy"
 
 # DBs
 alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
@@ -33,4 +34,5 @@ alias fknbuild="sn -Vr *,71e9bce111e9429c && msbuild"
 alias nuget="/mnt/c/bin/nuget.exe"
 alias devenv='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/devenv.exe"'
 alias vstest='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe"'
-alias vstestsln='find ./bin/AnyCPU/Debug -name *UnitTest.dll -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe"  {} ";"'
+alias vstestjobpackage='find ./bin/AnyCPU/Debug -name *UnitTest.dll -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel {} ";"'
+alias vstestall='find . -path "*/bin/*Test.dll" -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel {} ";"'
