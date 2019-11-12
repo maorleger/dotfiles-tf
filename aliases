@@ -7,6 +7,7 @@ alias gpp="git pull --rebase && git push"
 alias gst="git status"
 alias cleanbranch="git branch --merge | grep -v master | xargs git branch -D"
 alias gd="git status -vv | diff-so-fancy"
+alias grb="git fetch && git rebase -i origin/master"
 
 # DBs
 alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
@@ -30,9 +31,9 @@ alias be="bundle exec"
 # msbuild
 alias msbuild='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe"'
 alias sn='"/mnt/c/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.6.1 Tools/sn.exe"'
-alias fknbuild="sn -Vr *,71e9bce111e9429c && msbuild"
+alias forcebuild="sn -Vr *,71e9bce111e9429c && msbuild"
 alias nuget="/mnt/c/bin/nuget.exe"
 alias devenv='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/devenv.exe"'
 alias vstest='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe"'
-alias vstestjobpackage='find ./bin/AnyCPU/Debug -name *UnitTest.dll -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel {} ";"'
+alias vstestjobpackage='find ./bin/AnyCPU/Debug -name *UnitTest.dll -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel /TestCaseFilter:TestCategory!=Integration {} ";"'
 alias vstestall='find . -path "*/bin/*Test.dll" -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel {} ";"'
