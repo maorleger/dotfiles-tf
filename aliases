@@ -29,11 +29,11 @@ alias tf="terraform"
 alias be="bundle exec"
 
 # msbuild
-alias msbuild='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe"'
+alias msbuild='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe"'
 alias sn='"/mnt/c/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.6.1 Tools/sn.exe"'
 alias forcebuild="sn -Vr *,71e9bce111e9429c && msbuild"
 alias nuget="/mnt/c/bin/nuget.exe"
-alias devenv='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/devenv.exe"'
-alias vstest='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe"'
-alias vstestjobpackage='find ./bin/AnyCPU/Debug -name *UnitTest.dll -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel /TestCaseFilter:TestCategory!=Integration {} ";"'
-alias vstestall='find . -path "*/bin/*Test.dll" -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel {} ";"'
+alias devenv='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/devenv.exe"'
+alias vstest='"/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe"'
+alias vstestjobpackage='find ./bin/AnyCPU/Debug -name *UnitTest.dll -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel /TestCaseFilter:TestCategory!=Integration {} ";"'
+alias vstestall='find . -path "*/bin/*Test.dll" -exec "/mnt/c/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/Common7/IDE/CommonExtensions/Microsoft/TestWindow/vstest.console.exe" /Parallel {} ";"'
